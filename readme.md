@@ -36,7 +36,7 @@
 
 <br>
 
-# [fit] Modern JS no longer makes me 😱.
+# [fit] Modern JS no longer makes me 😱
 
 <br>
 
@@ -102,7 +102,7 @@
 
 # Webpack
 
-> But that configuration is a big pile of JSON :cry:
+> But editing/adding-to a webpack config requires some more than cursory understanding of webpack
 
 ---
 
@@ -169,7 +169,9 @@
 
 # Rails "4.2"..."5.1"
 
-## Will be officially part of 5.1
+## Officially deployed as part of 5.1
+
+- At the same time we :skull: jQuery as a standard dependency
 
 ---
 
@@ -183,7 +185,8 @@
 
 ## Add gem to Gemfile
 
-- For now: `gem 'webpacker', github: 'rails/webpacker'`
+- For < `5.1`
+- `gem 'webpacker', github: 'rails/webpacker'`
 
 ---
 
@@ -192,28 +195,6 @@
 `rails new --webpack`
 `rails new --webpack=react`
 `rails new --webpack=angular`
-
----
-
-# [fit] Rails 5.0.2
-
----
-
-# Setup
-
-<br>
-
-## Install `yarn` (`npm install yarn`)
-
-## `rails webpacker:install`
-
----
-
-# New binstubs!
-
-- `./bin/webpack`
-- `./bin/webpack-watcher`
-- `./bin/webpack-dev-server`
 
 ---
 
@@ -246,7 +227,7 @@
 
 # Each css file is also the name of a `pack`
 
-> These can also be brought into a page with
+> These can be brought into a page with
 
 > `stylesheet_pack_tag 'NAME'`
 
@@ -282,8 +263,8 @@
 
 <br>
 
-# [fit] `yarn install babel-preset-stage-0`
-# [fit] `yarn install babel-preset-es2015`
+# [fit] `yarn add babel-preset-stage-0`
+# [fit] `yarn add babel-preset-es2015`
 
 ---
 
